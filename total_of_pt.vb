@@ -4,13 +4,13 @@ Public Sub total_of_pt()
 
 Dim c As Integer
 
-
-
+Dim lastrow As Integer
+lastrow = ActiveSheet.UsedRange.Rows.Count
 c = 1
 
 Range("m2").Select
 
-For c = 1 To n
+For c = 1 To lastrow
 Dim annualfiretax As Currency
 dim sumofpt as currency
 Dim sumofft As Currency
