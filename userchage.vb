@@ -2,8 +2,11 @@
 Public Sub calculationofusercharge()
 Dim l As Integer
 l = 1
+Dim lastrow As Integer
+lastrow = ActiveSheet.UsedRange.Rows.Count
+  
 Range("g2").Select
-For l = 1 To 2189
+For l = 1 To lastrow
 Dim area As Double
 area = ActiveCell.Offset(0, 1).Value
 If ActiveCell.Value = "RESIDENTIAL" Then
