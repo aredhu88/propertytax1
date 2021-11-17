@@ -5,12 +5,14 @@ Public Sub final()
 Dim c As Integer
 
 
+Dim lastrow As Integer
+lastrow = ActiveSheet.UsedRange.Rows.Count
 
 c = 1
 
 Range("m2").Select
 
-For c = 1 To n
+For c = 1 To lastrow
 
 Dim i As Integer
 
