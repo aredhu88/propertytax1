@@ -152,8 +152,11 @@ If ActiveCell.Value = "RESIDENTIAL" Then
                 ActiveCell.Offset(0, 49).Value = 24000
             End If
      End If
-    
-    
+    If ActiveCell.Value = "INDUSTRIAL" Then
+      ActiveCell.Offset(0, 47).Value = area/1.196*0.50*12
+      ActiveCell.Offset(0, 48).Value = area/1.196*0.50*12
+      ActiveCell.Offset(0, 49).Value = area/1.196*0.50*12
+    End if   
     
     ActiveCell.Offset(1, 0).Select
   
